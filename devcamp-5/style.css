@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #f3f3f3;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+
+  & input[name="title"] {
+    flex: 4;
+  }
+
+  & input[name="description"] {
+    flex: 7;
+  }
+
+  & input[name="submit"] {
+    flex: 1;
+  }
+}
+
+.navbar {
+  color: #f3f3f3;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section {
+  margin: 16px auto;
+  max-width: 600px;
+}
+
+.items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style-type: none;
+
+  & li {
+    border-bottom: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+  }
+
+  & button {
+    width: 20px;
+    margin: 8px 0;
+    color: red;
+  }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+.load-more-btn,
+.scroll-top-btn,
+.submit-btn {
+  padding: 8px;
+  color: #f3f3f3;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
